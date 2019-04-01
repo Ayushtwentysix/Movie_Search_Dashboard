@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.loader {
+  margin-top: 70px;
+  border: 3px solid rgb(38, 0, 128);
+  height: 50px;
+  width: 0.1px;
+  color: red;
+  margin-left: 10px;
+}
+
+#one {
+  animation: updown 1s infinite;
+}
+#two {
+  animation: updown 1s linear infinite 0.15s;
+}
+#three {
+  animation: updown 1s linear infinite 0.3s;
+}
+#four {
+  animation: updown 1s linear infinite 0.45s;
+}
+#five {
+  animation: updown 1s linear infinite 0.6s;
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
+    border: 3px solid moccasin;
+  }
+}
+
+.container {
+  display: flex;
+  margin-left: 700px;
+}
